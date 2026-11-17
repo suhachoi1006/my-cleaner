@@ -59,7 +59,7 @@
 
   function onFile(file) {
     if (!file) return;
-    state = { name: baseName(file.name), table: null, rules: null, result: null, twice: null };
+    state = { name: baseName(file.name).normalize('NFC'), table: null, rules: null, result: null, twice: null };
     ['s-result', 's-compare'].forEach(function (i) { $(i).hidden = true; });
     readTable(file, false).then(function (t) {
       state.table = t;
