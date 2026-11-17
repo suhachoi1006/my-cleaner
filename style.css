@@ -1,0 +1,27 @@
+:root{--bg:#f7f7f5;--fg:#1d1d1b;--muted:#6b6b66;--card:#fff;--line:#dcdcd6;--accent:#2457c5;--ok:#1b7a43;--bad:#b3261e;--warn:#8a5a00;--warnbg:#fff4d6}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--fg:#ecece8;--muted:#a1a19a;--card:#202020;--line:#3a3a36;--accent:#7aa2f7;--ok:#6fd49a;--bad:#ff8a80;--warn:#f0c36a;--warnbg:#3a3015}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+main{max-width:960px;margin:0 auto;padding:24px 16px 80px}
+h1{margin:0 0 4px;font-size:24px}h2{font-size:18px;margin:0 0 12px}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;margin:16px 0}
+.note{color:var(--muted);margin:4px 0 8px}
+#drop{display:block;border:2px dashed var(--line);border-radius:10px;padding:34px 16px;text-align:center;cursor:pointer}
+#drop.over,#drop:focus{border-color:var(--accent);outline:none}
+button,.btn{font:inherit;background:var(--accent);color:#fff;border:0;border-radius:8px;padding:9px 16px;cursor:pointer;text-decoration:none;display:inline-block;margin:8px 8px 0 0}
+#run{font-size:16px;padding:11px 22px}
+.warn{background:var(--warnbg);color:var(--warn);border-radius:8px;padding:10px 12px;margin:8px 0}
+.warn.bad{color:var(--bad)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.card{border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.card b{display:block;font-size:22px}.card span{color:var(--muted);font-size:13px}
+.ok{color:var(--ok)}.bad{color:var(--bad)}
+.tablewrap{overflow:auto;max-height:340px;border:1px solid var(--line);border-radius:8px;margin:6px 0 14px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap;vertical-align:top}
+th{position:sticky;top:0;background:var(--card)}
+td.wrap{white-space:normal}
+details{margin:10px 0}summary{cursor:pointer;font-weight:600}
+.rule{border-bottom:1px solid var(--line);padding:8px 0}.rule:last-child{border:0}
+.rule small{color:var(--muted);display:block}
+input[type=file]{font:inherit}

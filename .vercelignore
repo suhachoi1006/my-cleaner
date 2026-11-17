@@ -1,0 +1,17 @@
+# 저장소에만 올리고 배포에는 올리지 않는다
+CLAUDE.md
+README.md
+
+# 어디에도 올리지 않는다 (.gitignore 와 같은 것)
+tools/
+진단/
+.claude/
+*_정리본.csv
+*_바꾼기록.csv
+.DS_Store
+~$*
+
+# git 내부
+.git/
+.gitignore
+.vercelignore
